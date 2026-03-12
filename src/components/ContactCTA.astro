@@ -1,0 +1,86 @@
+---
+import CallToAction from "./CallToAction.astro";
+import Icon from "./Icon.astro";
+---
+
+<aside class="cta-aside">
+  <div class="cta-block">
+    <h2>Want to know more about me?</h2>
+    <CallToAction href="/assets/SABO-Damien-CV-2025-en.pdf" download={true}>
+      Get my resume here
+      <Icon icon="download" size="1.2em" />
+    </CallToAction>
+  </div>
+
+  <hr class="cta-divider" />
+
+  <div class="cta-block">
+    <h2>Interested in working together?</h2>
+    <CallToAction href="mailto:damiensabo@live.fr">
+      Let's get in touch
+      <Icon icon="envelope" size="1.2em" />
+    </CallToAction>
+  </div>
+</aside>
+
+<style>
+  aside {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid var(--gray-800);
+    border-bottom: 1px solid var(--gray-800);
+    padding: 5rem 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* .cta-aside {
+    display: flex;
+    gap: 2rem;
+  } */
+
+  .cta-divider {
+    border: none;
+    height: 1px;
+    background: var(--gray-800);
+    margin: 0.5rem 0;
+  }
+
+  .cta-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+	gap: 1.5rem;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    text-align: center;
+    max-width: 25ch;
+  }
+
+  @media (min-width: 50em) {
+    aside {
+      padding: 7.5rem 1.5rem;
+      margin-inline: auto;
+      max-width: 83rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+	  gap: 4rem;
+    }
+
+    .cta-block {
+      flex-direction: row;
+    }
+
+    h2 {
+      font-size: var(--text-3xl);
+      text-align: left;
+    }
+  }
+</style>

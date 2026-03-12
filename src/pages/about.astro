@@ -1,0 +1,137 @@
+---
+import { Image } from "astro:assets";
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About | Damien Sabo" description="About Damien Sabo">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="a creative software engineer who loves outdoor sports, music, and traveling"
+      >
+        <div class="flex-center gap-8" style="max-height: 480px;">
+          <img
+            style="max-height: 100%;"
+            src="/assets/at-work-2.png"
+            alt="Damien at work"
+          />
+          <img
+            style="max-height: 100%;"
+            src="/assets/climbing.png"
+            alt="Damien climbing"
+          />
+        </div>
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            I gratuated from Bordeaux INP in 2016 with a Master's degree in
+            electrical engineering and where I specialized in signal & image
+            processing before smoothly transitioning to software and web
+            development.
+          </p>
+          <p>
+            Following a transformative gap year while solo backpacking across
+            South America, I learned new skills through an intensive UX/UI
+            Design course at Ironhack in Paris. Leveraging my technical
+            expertise, I bridge the gap between code and design to create
+            user-centric solutions.
+          </p>
+          <p>
+            Recognized for precision, attention to detail, and high-quality
+            work, I thrive in collaborative and international environments that
+            foster creativity and mutual support.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>2023: Ironhack Paris, France</p>
+          <p>
+            2013-2016: Bordeaux INP: ENSEIRB-MATMECA (Bordeaux Institute of
+            Technology), France
+          </p>
+          <p>2015: Ecole de Technologie Supérieure, Montreal, Canada</p>
+          <p>2014: University of Aalborg, Denmark</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Main tech skills</h2>
+        <div class="content">
+          <p>
+            Frontend development: React, Vue, JavaScript, TypeScript, HTML/CSS
+          </p>
+          <p>RESTful APIs, Git, Jira</p>
+          <p>Agile methodology: SCRUM, Kanban</p>
+          <p>UX/UI design: Figma, Product design, Design thinking</p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-lg);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-md);
+    }
+  }
+</style>

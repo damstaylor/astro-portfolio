@@ -1,7 +1,7 @@
 ---
 title: Hostelworld app redesign
 publishDate: 2026-10-03 00:00:00
-img: /assets/hostelworld-screens.png
+img: /assets/screenshots/hostelworld-screens.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
   A UX/UI redesign for my favorite travel reservation app

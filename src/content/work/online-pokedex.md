@@ -1,7 +1,7 @@
 ---
 title: Online Pokédex
 publishDate: 2026-11-03 00:00:00
-img: /assets/pokedex-screens.png
+img: /assets/screenshots/pokedex-screens.png
 img_alt: Online Pokédex
 description: |
   An online Pokémon encyclopedia I developed with React

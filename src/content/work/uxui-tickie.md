@@ -1,7 +1,7 @@
 ---
 title: UX/UI design project for a sports ticketing mobile app
 publishDate: 2026-11-03 00:00:00
-img: /assets/tickie-3-screens.png
+img: /assets/screenshots/tickie-3-screens.png
 img_alt: Tickie Figma screenshots
 description: |
   An MVP of a ticket purchase user flow in a ticket purchase mobile app

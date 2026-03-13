@@ -63,11 +63,17 @@ import Icon from './Icon.astro';
     gap: 3rem;
   }
 
+  .skills > div {
+    display: flex;
+    align-items: center;
+  }
+
   .skills h2 {
     font-size: var(--text-lg);
   }
 
   .skills p {
+    text-align: center;
     color: var(--gray-400);
   }
 
@@ -81,6 +87,14 @@ import Icon from './Icon.astro';
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 5rem;
+    }
+
+    .skills > div {
+      align-items: flex-start;
+    }
+
+    .skills p {
+      text-align: start;
     }
 
     .skills h2 {

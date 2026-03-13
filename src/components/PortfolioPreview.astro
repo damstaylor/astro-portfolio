@@ -1,8 +1,8 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  project: CollectionEntry<"work">;
+  project: CollectionEntry<'work'>;
 }
 
 const { data, id } = Astro.props.project;
@@ -12,7 +12,7 @@ const { data, id } = Astro.props.project;
   <span class="title">{data.title}</span>
   <img
     src={data.img}
-    alt={data.img_alt || ""}
+    alt={data.img_alt || ''}
     style="object-position: top;"
     loading="lazy"
     decoding="async"

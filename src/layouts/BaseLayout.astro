@@ -2,10 +2,10 @@
 // Learn about using Astro layouts:
 // https://docs.astro.build/en/basics/layouts/
 
-import Footer from "../components/Footer.astro";
+import Footer from '../components/Footer.astro';
 // Component Imports
-import MainHead from "../components/MainHead.astro";
-import Nav from "../components/Nav.astro";
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
 
 interface Props {
   title?: string | undefined;
@@ -28,15 +28,13 @@ const { title, description } = Astro.props;
 
     <script>
       // Add “loaded” class once the document has completely loaded.
-      addEventListener("load", () =>
-        document.documentElement.classList.add("loaded"),
-      );
+      addEventListener('load', () => document.documentElement.classList.add('loaded'));
       // Set links to be opened in new tab on click
-      document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener('DOMContentLoaded', () => {
         const links = document.querySelectorAll("a[href^='http']");
         links.forEach((link) => {
-          link.setAttribute("target", "_blank");
-          link.setAttribute("rel", "noopener noreferrer");
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
         });
       });
     </script>
@@ -44,8 +42,8 @@ const { title, description } = Astro.props;
     <style>
       :root {
         --_placeholder-bg: linear-gradient(transparent, transparent);
-        --bg-image-main: url("/assets/backgrounds/bg-main-light-800w.jpg");
-        --bg-image-main-curves: url("/assets/backgrounds/bg-main-light.svg");
+        --bg-image-main: url('/assets/backgrounds/bg-main-light-800w.jpg');
+        --bg-image-main-curves: url('/assets/backgrounds/bg-main-light.svg');
         --bg-image-subtle-1: var(--_placeholder-bg);
         --bg-image-subtle-2: var(--_placeholder-bg);
         --bg-image-footer: var(--_placeholder-bg);
@@ -58,8 +56,8 @@ const { title, description } = Astro.props;
       }
 
       :root.theme-dark {
-        --bg-image-main: url("/assets/backgrounds/bg-main-dark-800w.jpg");
-        --bg-image-main-curves: url("/assets/backgrounds/bg-main-dark.svg");
+        --bg-image-main: url('/assets/backgrounds/bg-main-dark-800w.jpg');
+        --bg-image-main-curves: url('/assets/backgrounds/bg-main-dark.svg');
         --bg-svg-blend-mode: darken;
         --bg-blend-mode: lighten;
       }
@@ -80,10 +78,10 @@ const { title, description } = Astro.props;
       @media (min-width: 50em) {
         :root {
           --bg-scale: 1;
-          --bg-image-main: url("/assets/backgrounds/bg-main-light-1440w.jpg");
+          --bg-image-main: url('/assets/backgrounds/bg-main-light-1440w.jpg');
         }
         :root.theme-dark {
-          --bg-image-main: url("/assets/backgrounds/bg-main-dark-1440w.jpg");
+          --bg-image-main: url('/assets/backgrounds/bg-main-dark-1440w.jpg');
         }
 
         /* :root.loaded {
@@ -103,13 +101,10 @@ const { title, description } = Astro.props;
         isolation: isolate;
         background:
 					/*noise*/
-          url("/assets/backgrounds/noise.png") top center/220px repeat,
-          /*footer*/ var(--bg-image-footer) bottom
-            center/var(--bg-gradient-size) no-repeat,
-          /*header1*/ var(--bg-image-main-curves) top
-            center/var(--bg-gradient-size) no-repeat,
-          /*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size)
-            no-repeat,
+          url('/assets/backgrounds/noise.png') top center/220px repeat,
+          /*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
+          /*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
+          /*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
           /*base*/ var(--gray-999);
         background-blend-mode: /*noise*/
           overlay,

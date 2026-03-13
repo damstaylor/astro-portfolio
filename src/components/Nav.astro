@@ -49,7 +49,12 @@ const isCurrentPage = (href: string) => {
       {
         textLinks.map(({ label, href }) => (
           <li>
-            <a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={href}>
+            <a
+              aria-current={isCurrentPage(href) ? 'page' : null}
+              class="link"
+              href={href}
+              transition:name={isCurrentPage(href) ? 'active-nav' : undefined}
+            >
               {label}
             </a>
           </li>
@@ -76,7 +81,12 @@ const isCurrentPage = (href: string) => {
       {
         textLinks.map(({ label, href }) => (
           <li>
-            <a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={href}>
+            <a
+              aria-current={isCurrentPage(href) ? 'page' : null}
+              class="link"
+              href={href}
+              transition:name={isCurrentPage(href) ? 'active-nav' : undefined}
+            >
               {label}
             </a>
           </li>
@@ -95,7 +105,7 @@ const isCurrentPage = (href: string) => {
         }
       </div>
 
-      <div class="theme-toggle">
+      <div class="theme-toggle" transition:persist>
         <ThemeToggle />
       </div>
     </div>

@@ -143,6 +143,7 @@ const isCurrentPage = (href: string) => {
   }
   customElements.define('menu-button', MenuButton);
 
+  // Easter egg logic
   const trigger = document.getElementById('terminal-egg-trigger');
   const overlay = document.getElementById('cat-egg-overlay');
   const stage = overlay?.querySelector('.cat-egg-stage');
@@ -329,6 +330,8 @@ const isCurrentPage = (href: string) => {
     height: calc(var(--icon-size) + 2 * var(--icon-padding));
   }
 
+  /* ====================================================== */
+  /* Easter Egg layout & animation */
   #cat-egg-overlay {
     position: fixed;
     inset: 0;
@@ -366,8 +369,7 @@ const isCurrentPage = (href: string) => {
   }
 
   @media (hover: hover) and (pointer: fine) {
-    #cat-egg-overlay:not(.closing) .cat-egg-stage img:hover {
-      transform: rotate(-2deg) scale(1.02);
+    #cat-egg-overlay:not(.closing) img:hover {
       filter: drop-shadow(0 36px 60px rgba(0, 0, 0, 0.55));
     }
   }
@@ -391,12 +393,6 @@ const isCurrentPage = (href: string) => {
     to {
       transform: translateY(-120%) scale(0.96);
       opacity: 0;
-    }
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    #cat-egg-overlay:not(.closing) img:hover {
-      filter: drop-shadow(0 36px 60px rgba(0, 0, 0, 0.55));
     }
   }
 

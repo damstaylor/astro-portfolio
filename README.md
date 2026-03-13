@@ -4,8 +4,7 @@
 npm create astro@latest -- --template portfolio
 ```
 
-![portfolio](public\assets\screenshots\preview-screen.png)
-
+<img src="public/assets/screenshots/preview-screen.png" alt="Portfolio preview">
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

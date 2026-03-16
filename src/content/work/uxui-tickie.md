@@ -1,10 +1,12 @@
 ---
-title: UX/UI design project for a sports ticketing mobile app
+title: UX/UI design project for a sports ticketing web app
 publishDate: 2026-11-03 00:00:00
-img: /assets/screenshots/tickie-3-screens.png
+img: /assets/screenshots/tickie-4-screens.png
 img_alt: Tickie Figma screenshots
+video: /assets/videos/tickie.mp4
+video_alt: Tickie MVP demo
 description: |
-  An MVP of a ticket purchase user flow in a ticket purchase mobile app
+  An MVP of a purchase user flow in a ticketing web app
 tags:
   - Design
   - Mobile app
@@ -12,10 +14,36 @@ tags:
   - NFT
 ---
 
-As our final project in our intensive training at Ironhack Paris,Vincent Pocholleand I, two UX/UI designers, worked for two weeks on an MVP (Minimum Viable Product) that consisted of a ticket purchase user flow on a new web application for Tickie designed for sports event ticket buyers. We limited our scope to Paris, France, where an active supporter community is used to attending several events a year, especially in sports like football, rugby, and basketball, among others.
+As our final project in our intensive UX/UI design training at Ironhack Paris,Vincent Pocholle and I, two UX/UI designers, worked for two weeks on an MVP (Minimum Viable Product) that consisted of a ticket purchase user flow on a new ticketing web application for [Tickie](https://www.tickie.io/), a disruptive French start-up based in Paris that creates secure software solutions for the events market.
 
-Ticketing is a key part of an event organization: wrong ticket management can have significant repercussions on the course of the event, as sometimes seen on the news covering excesses in crowded football matches for instance.
+After a targeted user research process, an existing design proposal was completely overriden in order to meet the user's need.
+
+This is what the app would have looked before:
+
+<div class="flex-center">
+  <img src="/assets/screenshots/tickie-before.png" alt="Tickie screenshots before" />
+</div>
+
+And this is how we improved it:
+
+<div class="flex-center">
+  <img src="/assets/screenshots/tickie-after.png" alt="Tickie screenshots after" />
+</div>
+
+See here the delivered demo of the final MVP prototype:
+
+<div class="flex-center">
+  <video muted playsinline controls controlslist="nodownload">
+    <source src="/assets/videos/tickie.mp4" type="video/mp4" />
+  </video>
+</div>
+<style>
+  video {
+    aspect-ratio: 590 / 1280;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+  }
+</style>
 
 [Read full article on Medium](https://medium.com/@damiensabo/case-study-designing-a-sports-ticketing-web-app-for-a-start-up-f7eeb39dea32)
-
-[Demo video](https://drive.google.com/file/d/1WXGi7BqoTBHEHT22-5ALl9Vr9c2wRmr_/view?usp=sharing)
